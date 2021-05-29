@@ -22,7 +22,7 @@
         -webkit-background-clip: text;
         color: transparent;
     }
-    #num{
+    .num{
         width: 10em;
     }
 
@@ -42,7 +42,6 @@
     }
     .box1 img{
         width: 50%;
-        height: 50%;
         object-fit: cover;
     }
     .imgB:hover{
@@ -98,3 +97,4 @@
         width: 3em;
         margin: 1em;
     }
+    
