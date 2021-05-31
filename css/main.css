@@ -104,7 +104,7 @@
         margin-top: 1.5em;
     }
     .boxFooter p{
-        font-size: 0.3em;
+        font-size: 1vw;
         letter-spacing: 0.1em;
         
         text-align:center;
@@ -185,7 +185,7 @@
             /* border: solid 1px blue; */
         }
         .box1 img{
-            width: 100%;
+            width: 8vw;
             object-fit: cover;
         }
         .imgB{
@@ -236,7 +236,6 @@
         .boxFooter p{
             font-size: 1vw;
             letter-spacing: 0.1em;
-            
             text-align:center;
         }
       }
