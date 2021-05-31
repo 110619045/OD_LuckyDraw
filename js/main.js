@@ -1,20 +1,32 @@
-$('.js-start').on('click', function () {
+$('.get-num').on('click',function(){
     num = document.getElementById('num').value;
     console.log(num);
     if(num>100){
         alert("次數請小於100");
     }
     if(num<=100){
-        // setTimeout(function() {
-        //     window.location.replace("index2.html");
-        // }, 3000);
-    
-        var arr = [];
-        arr.length = num;
-        console.log(arr);
+        window.location.href="index2.html?id="+num+"";
+    }
+})
 
-        for(var a=0; a<num; a++){
-            var items=["A", 
+var id= location.search.replace(/[^\d]/g, "")
+var arr = [];
+
+start();
+function start(){
+    console.log("123");
+    // num = document.getElementById('id').value;
+    console.log(id);
+    if(id>100){
+        alert("次數請小於100");
+    }
+    if(id<=100){
+        
+        arr.length = id;
+        console.log(arr);
+        
+        for(var a=0; a<id; a++){
+            var items=["A1", 
             "B1", "B2", "B3", "B4", "B5", "B6", "B7", 
             "C1", "C2", "C3", "C4", "C5", "C6", "C7", 
             "D1", "D2", "D3", "D4", "D5", "D6", "D7", 
@@ -35,18 +47,36 @@ $('.js-start').on('click', function () {
                 }
             }
             var randomNumber=Math.floor(Math.random()*totalWeight);
-            $('.js-result').text('等待開將結果...');
             console.log(items[randomArray[randomNumber]]);
             arr[a]=items[randomArray[randomNumber]];
             console.log(arr);
         }
+
         setTimeout(function() {
-            $('.js-result').text('開獎結果：' + arr);
-        }, 3000);
+            $('.js-result').text('開獎結果');
+        }, 2000);
+
         return items[randomArray[randomNumber]];
+    }
+}
+
+const imgStr = "./src/ID_HERE.png";
+$(document).ready(function() {
+    let $template = $('#template01');
+    for(let i=0;i<arr.length;i++){
+        let $node = $template.html();
+        let imgUrl = imgStr.replace(/ID_HERE/g, arr[i]);
+        setTimeout(function() {
+            $node = $node.replace('IMG_HERE',imgUrl);
+            // $node = $node.replace('TEXT_HERE',arr[i]);
+        $('aside').append($node);
+        }, 2000);
+        
     }
 });
 
+
+// console.log(arr);
 
 // $('.js-start').on('click', function () {
 //     // window.location.replace("index2.html");

@@ -12,7 +12,7 @@
     }
 
     .tital{
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight:bold;
         letter-spacing: 0.1em;
         text-align:center;
@@ -98,3 +98,22 @@
         margin: 1em;
     }
     
+    .js-result{
+        font-size: 3vw;
+        letter-spacing: 0.1em;
+        text-align:center;
+    }
+
+    aside{
+        flex-direction: row;
+        padding: 0px 0px 0px 0px;
+        justify-content: center;
+        /* align-items: flex-start; */
+        
+        /* border:solid 1px brown; */
+    }
+
+    .imgTemp{
+        width: 20vw;
+        /* border:solid 1px blueviolet; */
+    }
