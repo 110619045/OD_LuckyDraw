@@ -188,6 +188,14 @@
             width: 100%;
             object-fit: cover;
         }
+        .imgB{
+            width: 100%;
+            object-fit: cover;
+        }
+        .imgC{
+            width: 100%;
+            object-fit: cover;
+        }
         #num{
             width: 15vh;
             height: 5vh;
