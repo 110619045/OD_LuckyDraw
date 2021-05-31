@@ -22,9 +22,6 @@
         -webkit-background-clip: text;
         color: transparent;
     }
-    .num{
-        width: 10em;
-    }
 
     .imgA{
         width: 100%;
@@ -34,7 +31,32 @@
         display: flex;
         margin: auto;
         justify-content: center;
+        margin-bottom: 4vh;
         /* border: solid 1px blue; */
+    }
+
+    #num{
+        width: 20vh;
+        height: 5vh;
+        margin: 2vh;
+        
+    }
+
+    .get-num{
+        margin: 2vh;
+        width: 10vh;
+        height: 5vh;
+        border: 0;
+        border: 2px solid black;
+        border-radius: 10px;
+        background: white;
+    }
+    .get-num:hover{
+        width: 10vh;
+        border-radius: 10px;
+        border: 2px solid #FFCCCC;
+        border-radius: 10px;
+        background: #FFF5F5;
     }
 
     .box1{
@@ -109,11 +131,47 @@
         padding: 0px 0px 0px 0px;
         justify-content: center;
         /* align-items: flex-start; */
-        
         /* border:solid 1px brown; */
+    }
+
+    .lot{
+        width: 20vw;
+        z-index:1;
+        position: absolute;
+
+    }
+    .lot:active{
+        transform-origin: top right;
+        transform:skew(5deg,30deg);
+        z-index: 10;
     }
 
     .imgTemp{
         width: 20vw;
+        z-index: 2;
+        /* position: absolute; */
         /* border:solid 1px blueviolet; */
+    }
+
+    .home{
+        width: 15vh;
+        height: 6vh;
+        border: 0;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: white;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .home:hover{
+        width: 15vh;
+        border: 1px solid #FFCCCC;
+        border-radius: 10px;
+        background: #FFCCCC;
+        color: white;
     }

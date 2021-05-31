@@ -66,14 +66,47 @@ $(document).ready(function() {
     for(let i=0;i<arr.length;i++){
         let $node = $template.html();
         let imgUrl = imgStr.replace(/ID_HERE/g, arr[i]);
+        $node = $node.replace(/TEXT_HERE/g,i);
+        
         setTimeout(function() {
             $node = $node.replace('IMG_HERE',imgUrl);
-            // $node = $node.replace('TEXT_HERE',arr[i]);
-        $('aside').append($node);
-        }, 2000);
-        
+            $('aside').append($node);
+        }, 3000);
     }
 });
+
+$('.home').on('click',function(){
+    window.location.href="index.html";
+})
+
+
+var hide = function(y){
+    // $('#'+y).animate(
+    // {
+    //     // right: '400px', 
+    //     // bottom: '400px', 
+    //     // width: '-400px',
+    //     // height: '-400px',
+    //     // marginLeft: 0,
+    //     // lefttop:'toggle'
+    // });
+    console.log(y);
+    $('#'+y).hide(3);
+    return y;
+};
+// hide();
+// var TEXT_HERE;
+// function hide(TEXT_HERE){
+//     console.log(TEXT_HERE);
+//     // $('.TEXT_HERE').hide();
+//     return TEXT_HERE;
+// }
+//onclick="hide()"
+
+// $('.hide').on('click',function(){
+//     console.log("hide");
+//     $('.hide').hide();
+// })
 
 
 // console.log(arr);
