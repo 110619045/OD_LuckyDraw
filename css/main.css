@@ -65,8 +65,10 @@
     }
     .box1 img{
         width: 50%;
-        object-fit: cover;
+        height: auto;
+        /* object-fit: cover; */
     }
+    
     @media screen and (min-width:900px){
         .imgB:hover{
             vertical-align: middle;
@@ -185,7 +187,7 @@
             /* border: solid 1px blue; */
         }
         .box1 img{
-            width: 8vw;
+            width: 100%;
             object-fit: cover;
         }
         .imgB{
