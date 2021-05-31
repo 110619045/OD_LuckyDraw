@@ -39,20 +39,21 @@
         width: 20vh;
         height: 5vh;
         margin: 2vh;
-        
     }
 
     .get-num{
-        margin: 2vh;
-        width: 10vh;
+        margin-top: 2vh;
+        width: 100px;
         height: 5vh;
         border: 0;
-        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+        border: 0.1px solid grey;
         border-radius: 10px;
         background: white;
     }
     .get-num:hover{
-        width: 10vh;
+        width: 100px;
         border-radius: 10px;
         border: 2px solid #FFCCCC;
         border-radius: 10px;
@@ -66,34 +67,27 @@
         width: 50%;
         object-fit: cover;
     }
-    .imgB:hover{
-        vertical-align: middle;
-        transform:scale(2)translate(25%,0px);
-        transition-duration: 0.5s;
-    }
-    .imgC:hover{
-        vertical-align: middle;
-        transform:scale(2)translate(-25%,0px);
-        transition-duration: 0.5s;
-    }
-    .imgD:hover{
-        vertical-align: middle;
-        transform:scale(2)translate(25%,-25%);
-        transition-duration: 0.5s;
-    }
-    .imgE:hover{
-        vertical-align: middle;
-        transform:scale(2)translate(-25%,-25%);
-        transition-duration: 0.5s;
-    }
-
-    .divB{
-        position: absolute;
-    }
-
-    .divB img{
-        width: 20%;
-        display: none;
+    @media screen and (min-width:900px){
+        .imgB:hover{
+            vertical-align: middle;
+            transform:scale(2)translate(25%,0px);
+            transition-duration: 0.5s;
+        }
+        .imgC:hover{
+            vertical-align: middle;
+            transform:scale(2)translate(-25%,0px);
+            transition-duration: 0.5s;
+        }
+        .imgD:hover{
+            vertical-align: middle;
+            transform:scale(2)translate(25%,-25%);
+            transition-duration: 0.5s;
+        }
+        .imgE:hover{
+            vertical-align: middle;
+            transform:scale(2)translate(-25%,-25%);
+            transition-duration: 0.5s;
+        }
     }
 
     .btn{
@@ -138,7 +132,6 @@
         width: 20vw;
         z-index:1;
         position: absolute;
-
     }
     .lot:active{
         transform-origin: top right;
@@ -175,3 +168,67 @@
         background: #FFCCCC;
         color: white;
     }
+
+    @media screen and (max-width:900px) { 
+        article{
+            width: 80%;
+            margin: auto;
+            padding: 1%;
+        }
+        .tital{
+            font-size: 6vw;
+            margin: 2%;
+            /* border: grey 1px solid; */
+        }
+        .box0{
+            margin-bottom: 2vh;
+            /* border: solid 1px blue; */
+        }
+        .box1 img{
+            width: 100%;
+            object-fit: cover;
+        }
+        #num{
+            width: 15vh;
+            height: 5vh;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .get-num{
+            width: 10vh;
+            height: 5vh;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            border: 0;
+            justify-content: center;
+            align-items: center;
+            border: 0.1px solid grey;
+            border-radius: 10px;
+            background: white;
+        }
+        .get-num:hover{
+            width: 100px;
+            border-radius: 10px;
+            border: 2px solid #FFCCCC;
+            border-radius: 10px;
+            background: #FFF5F5;
+        }
+        .imgTemp{
+            width: 30vw;
+        }
+        .lot{
+            width: 30vw;
+        }
+        .js-result{
+            font-size: 5vw;
+            letter-spacing: 0.1em;
+            text-align:center;
+        }
+        .boxFooter p{
+            font-size: 1vw;
+            letter-spacing: 0.1em;
+            
+            text-align:center;
+        }
+      }
