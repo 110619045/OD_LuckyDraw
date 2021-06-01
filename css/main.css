@@ -65,7 +65,7 @@
     }
     .box1 img{
         width: 50%;
-        height: auto;
+        /* height: auto; */
         /* object-fit: cover; */
     }
     
@@ -189,6 +189,7 @@
         .box1 img{
             width: 100%;
             object-fit: cover;
+            padding-top: 0%;
         }
         .imgB{
             width: 100%;
