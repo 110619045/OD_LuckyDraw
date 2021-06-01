@@ -26,6 +26,12 @@
     .imgA{
         width: 100%;
     }
+    .imgB{
+        width: 50%;
+    }
+    .imgC{
+        width: 50%;
+    }
 
     .box0{
         display: flex;
