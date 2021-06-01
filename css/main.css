@@ -194,16 +194,16 @@
         }
         .box1 img{
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
             padding-top: 0%;
         }
         .imgB{
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
         .imgC{
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
         #num{
             width: 15vh;
